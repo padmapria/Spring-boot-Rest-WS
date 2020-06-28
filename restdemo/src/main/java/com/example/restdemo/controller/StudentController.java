@@ -44,12 +44,12 @@ public class StudentController {
        return studentService.update(id, student);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping(value = "/{id}")
     public void delete(@PathVariable int id){
         studentService.delete(id);
     }
 
-    @DeleteMapping("/deleteall")
+    @DeleteMapping(value = "/deleteall")
     public void deleteAll(){
         studentService.deleteAll();
     }
